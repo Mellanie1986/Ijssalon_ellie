@@ -1,16 +1,22 @@
-mijn_prijzen ={
-"aarbeien" : "3",
-"vanille" : "4",
-"chocolade" : "5"
-}
+from helper import decoreer
 
-aanbieding = (0.8 * 3)
-reclame_tekst = f"vandaag in de aanbieding aardbeien_ijs, 1 liter - slechts:€{ aanbieding} "
-reclame_tekst2 = reclame_tekst[:63]
-reclame_tekst3 = reclame_tekst2.upper()
-reclame_tekst4 = reclame_tekst3.split()
-for el in reclame_tekst4:
-    if len (el)>4: 
-        print (el.upper())
-    else:
-        print(el.lower())
+def print_aanbieding():
+    mijn_prijzen ={
+    "aarbeien" : "3",
+    "vanille" : "4",
+    "chocolade" : "5"
+    }
+
+    aanbieding = (0.8 * 3)
+    reclame_tekst = f"vandaag in de aanbieding aardbeien_ijs, 1 liter - slechts:€{ aanbieding} "
+    reclame_tekst2 = reclame_tekst[:63]
+    reclame_tekst3 = reclame_tekst2.upper()
+    reclame_tekst4 = reclame_tekst3.split()
+    for el in reclame_tekst4:
+        if len (el)>4: 
+            print (el.upper())
+        else:
+            print(el.lower())
+
+decoreer ("aanbieding")
+print_aanbieding()
