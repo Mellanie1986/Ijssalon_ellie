@@ -13,6 +13,6 @@ def fooi_pp(bedrag, personen):
         bedrag_pp ="??"
         return f"Het bedrag per persoon is €{bedrag_pp}"
     
-def onderstreept(tekst=" "):
-    uit = [tekst.append("koek")]
+def onderstreept (tekst=""):
+    uit = [tekst.append("")]
     print("uit")
